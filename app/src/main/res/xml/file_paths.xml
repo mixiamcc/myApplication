@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <external-path name="name" path="百中教育云/temp1" />
+
+    <files-path path="." name="file_path"/>
+</PreferenceScreen>

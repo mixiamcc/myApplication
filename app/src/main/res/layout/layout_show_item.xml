@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:paddingLeft="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_show_header"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/default_header"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        >
+        <TextView
+            android:id="@+id/tv_show_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mcc"
+            android:textSize="20dp"
+            android:textColor="@color/black0"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_show_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022.03.25"
+            android:textSize="15dp"
+            android:textColor="#535255"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/black0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_show_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="快乐生活."
+            android:textColor="#535255"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_show_photo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/icon_man"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioButton
+            android:id="@+id/iv_show_like"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:button="@null"
+            android:checked="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/like_radiobutton"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black0" />
+
+    <ImageView
+        android:id="@+id/iv_course_photo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="2dp"
+        android:src="@mipmap/default_video"
+        android:scaleType="centerCrop"
+        />
+
+
+    <LinearLayout
+        android:background="@color/theme_color"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_play_video"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/play_video"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="android开发案例教程"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black0" />
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:gravity="center_horizontal"
+android:padding="15dp">
+
+    <EditText
+    android:id="@+id/et_nickname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="输入新昵称"
+        android:textColor="@color/black0"
+        android:textColorHint="@color/black0"
+        android:maxLines="1"/>
+
+    <Button
+    android:id="@+id/btn_nick_affirm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="确认"
+    android:textAllCaps="false"
+    android:textColor="@color/black0"
+    android:background="@color/title_color"
+    android:layout_marginTop="10dp"/>
+</LinearLayout>

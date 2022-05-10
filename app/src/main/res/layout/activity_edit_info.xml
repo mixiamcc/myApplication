@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/theme_color">
+
+
+    <!--    标题栏-->
+
+    <com.example.myapplication.widget.TitleLayout
+        android:id="@+id/tl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+
+        <com.example.myapplication.widget.RoundImageView
+            android:id="@+id/ri_header"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/padding_left_and_right"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_header" />
+
+        <TextView
+            android:id="@+id/edit_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改头像"
+            android:textSize="15dp"
+            android:textColor="@color/gray3"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/padding_left_and_right"/>
+
+    </LinearLayout>
+    <!--    编辑界面，此处可以写成一个ItemGroup上传至com上-->
+    <com.example.myapplication.widget.ItemGroup
+        android:id="@+id/ig_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:jt_visible="false"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="ID号" />
+    <com.example.myapplication.widget.ItemGroup
+
+        android:id="@+id/ig_edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:edt_hint_content="修改密码"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="账户安全" />
+    <com.example.myapplication.widget.ItemGroup
+        android:id="@+id/ig_edit_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:edt_hint_content="未知"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="昵称" />
+
+    <com.example.myapplication.widget.ItemGroup
+        android:id="@+id/ig_edit_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:edt_hint_content="未知"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="身份" />
+
+
+    <com.example.myapplication.widget.ItemGroup
+        android:id="@+id/ig_edit_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:edt_hint_content="未知"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="性别"/>
+
+    <com.example.myapplication.widget.ItemGroup
+
+        android:id="@+id/ig_edit_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:edt_hint_content="未选择"
+        app:paddingLeft="@dimen/padding_left_and_right"
+        app:title="生日" />
+</LinearLayout>
